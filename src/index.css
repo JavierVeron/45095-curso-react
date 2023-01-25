@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.imagen_portada {
+  height: 100vh;
+}
+
+.imagen1 {
+  background-image: url("../public/images/Sitio-web-img-portada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
