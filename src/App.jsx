@@ -1,9 +1,13 @@
-import Destacado from "./Destacado";
+import Transpilling from "./Clase3/Transpilling";
+import Footer from "./Footer";
+import Header from "./Header";
 
 const App = () => {
   return (
     <div>
-      <Destacado />
+      <Header />
+      <Transpilling />
+      <Footer />
     </div>
   )
 }
