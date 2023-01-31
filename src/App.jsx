@@ -1,4 +1,4 @@
-import Transpilling from "./Clase3/Transpilling";
+import CompChildren, { Ad } from "./Clase4/CompChildren";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -6,7 +6,11 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Transpilling />
+      <CompChildren lugar="Coderhouse">
+        <Ad />
+        <Ad />
+        <Ad />
+      </CompChildren>
       <Footer />
     </div>
   )
