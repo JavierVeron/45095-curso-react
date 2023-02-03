@@ -7,8 +7,8 @@ export const Ad = () => {
 const CompChildren = ({lugar, children}) => {
     return (
         <div>
-            {children}
             <h1 className="bg-success">{lugar}</h1>
+            {children}
         </div>
     )
 }
