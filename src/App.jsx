@@ -1,4 +1,4 @@
-import EjemploPromesas from "./Clase6/EjemploPromesas";
+import ItemListContainer from "./Clase7/ItemListContainer";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <EjemploPromesas />
+      <ItemListContainer />
       <Footer />
     </div>
   )
