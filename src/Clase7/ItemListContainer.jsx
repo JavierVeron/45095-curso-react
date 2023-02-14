@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
+    const {categoryId} = useParams();
 
     useEffect(() => {
-        fetch("https://api.mercadolibre.com/sites/MLA/search?q=samsung s23&limit=24")
+        fetch("https://api.mercadolibre.com/sites/MLA/search?q=" + (categoryId ? categoryId : "samsung s23") + "&limit=24")
         .then((respuesta) => respuesta.json())
         .then((data) => {
             setItems(data.results);
         })
-    }, []);
+    }, [categoryId]);
 
     return (
         <div className="container">
